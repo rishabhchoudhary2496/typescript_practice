@@ -8,7 +8,7 @@
 //array
 var hasValue = true;
 var heroes = ['superman', 'batman', 'ironman', 0];
-var Animal = {};
+// const Animal = {}
 // function add (num1: number,num2: number,showResult: boolean){
 //     if(showResult){
 //         console.log(num1+num2)

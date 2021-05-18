@@ -8,7 +8,7 @@
 
 const hasValue: boolean = true
 const heroes = ['superman', 'batman', 'ironman', 0]
-const Animal = {}
+// const Animal = {}
 
 // function add (num1: number,num2: number,showResult: boolean){
 //     if(showResult){
