@@ -1,7 +1,20 @@
 "use strict";
-// namespace maths {
-//   function add(n1: number, n2: number) {
-//     return n1 + n2
-//   }
-// }
-// // function add(n1: number, n: number) {}
+//decorators decorate and returns a new function
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var Person = /** @class */ (function () {
+    function Person(message) {
+        this.msg = message;
+    }
+    Person.prototype.show = function () {
+        return 'Hello, ' + this.msg;
+    };
+    Person = __decorate([
+        sealed
+    ], Person);
+    return Person;
+}());

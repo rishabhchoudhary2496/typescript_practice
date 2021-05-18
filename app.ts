@@ -1,7 +1,12 @@
-// namespace maths {
-//   function add(n1: number, n2: number) {
-//     return n1 + n2
-//   }
-// }
+//decorators decorate and returns a new function
 
-// // function add(n1: number, n: number) {}
+@sealed
+class Person {
+  msg: string
+  constructor(message: string) {
+    this.msg = message
+  }
+  show() {
+    return 'Hello, ' + this.msg
+  }
+}
