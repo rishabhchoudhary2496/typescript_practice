@@ -7,12 +7,8 @@ connectDB()
 app.use(express.json())
 routes(app)
 
-const add = (a: number, b: number) => {
-  return a + b
-}
-
 app.get('/', (req: Request, res: Response) => {
-  res.json({ sum: add(10, 4) })
+  res.json({ message: 'api serving' })
 })
 
 app.listen(5000, () => {
