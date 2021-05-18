@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "express-validator": "^6.11.1"
   }
 }
